@@ -1,0 +1,40 @@
+// Sass/SCSS variables customization
+// https://quasar.dev/style/sass-scss-variables#variables-list
+
+// Theme
+$primary: #293341 !default;
+$secondary: lighten($primary, 75%) !default;
+$accent: lighten($primary, 25%) !default;
+$dark: darken($primary, 25%) !default;
+$info: $accent !default;
+$positive: #7bb946 !default;
+$negative: #c74a4a !default;
+$warning: #d09931 !default;
+
+// Tooltip
+$tooltip-fontsize: 12px !default;
+$tooltip-background: $accent !default;
+
+// Pane
+$left-pane-width: 320px !default;
+
+// Window
+$window-min-width: 300px !default;
+$window-min-height: 300px !default;
+$window-background: #ffffff !default;
+$window-border-style: solid !default;
+$window-border-width: 1px !default;
+$window-border-color: lightgray !default;
+$window-border-radius: 4px !default;
+$window-hover-border-color: $primary !default;
+$window-header-background: #eeeeee !default;
+$window-header-hover-background: #dddddd !default;
+$window-controls-size: 1rem !default;
+
+// Sticky
+$sticky-z-index: 1000 !default;
+
+// Table: quasar has eg $table-hover-background but nothing for background
+$table-background: #fff !default;
+
+

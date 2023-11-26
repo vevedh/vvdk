@@ -1,0 +1,234 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://www.kalisio.xyz/schemas/settings.update.json#",
+  "title": "schemas.UPDATE_SETTINGS_TITLE",
+  "type": "object",
+  "properties": {
+    "shortTime": {
+      "type": "string",
+      "group": "schemas.TIME_FORMAT_SETTINGS",
+      "field": {
+        "component": "form/KTextField",
+        "label": "schemas.TIME_FORMAT_SHORT_TIME_FIELD_LABEL",
+        "helper": "schemas.TIME_FORMAT_SHORT_TIME_FIELD_HELPER"
+      }
+    },
+    "longTime": {
+      "type": "string",
+      "group": "schemas.TIME_FORMAT_SETTINGS",
+      "field": {
+        "component": "form/KTextField",
+        "label": "schemas.TIME_FORMAT_LONG_TIME_FIELD_LABEL",
+        "helper": "schemas.TIME_FORMAT_LONG_TIME_FIELD_HELPER"
+      }
+    },
+    "shortDate": {
+      "type": "string",
+      "group": "schemas.TIME_FORMAT_SETTINGS",
+      "field": {
+        "component": "form/KTextField",
+        "label": "schemas.TIME_FORMAT_SHORT_DATE_FIELD_LABEL",
+        "helper": "schemas.TIME_FORMAT_SHORT_DATE_FIELD_HELPER"
+
+      }
+    },
+    "longDate": {
+      "type": "string",
+      "group": "schemas.TIME_FORMAT_SETTINGS",
+      "field": {
+        "component": "form/KTextField",
+        "label": "schemas.TIME_FORMAT_LONG_DATE_FIELD_LABEL",
+        "helper": "schemas.TIME_FORMAT_LONG_DATE_FIELD_HELPER"
+      }
+    },
+    "shortYear": {
+      "type": "string",
+      "group": "schemas.TIME_FORMAT_SETTINGS",
+      "field": {
+        "component": "form/KTextField",
+        "label": "schemas.TIME_FORMAT_SHORT_YEAR_FIELD_LABEL",
+        "helper": "schemas.TIME_FORMAT_SHORT_YEAR_FIELD_HELPER"
+      }
+    },
+    "longYear": {
+      "type": "string",
+      "group": "schemas.TIME_FORMAT_SETTINGS",
+      "field": {
+        "component": "form/KTextField",
+        "label": "schemas.TIME_FORMAT_LONG_YEAR_FIELD_LABEL",
+        "helper": "schemas.TIME_FORMAT_LONG_YEAR_FIELD_HELPER"
+      }
+    },
+    "timezone": {
+      "type": "string",
+      "group": "schemas.TIME_FORMAT_SETTINGS",
+      "field": {
+        "component": "form/KTimezoneField",
+        "label": "schemas.TIME_FORMAT_TIMEZONE_FIELD_LABEL"
+      }
+    },
+    "timelineStep": {
+      "type": "number",
+      "group": "schemas.TIMELINE_SETTINGS",
+      "field": {
+        "component": "form/KSelectField",
+        "label": "schemas.TIMELINE_STEP",
+        "options": [
+          { "label": "5m", "value": 5  },
+          { "label": "10m", "value": 10 },
+          { "label": "12m", "value": 12 },
+          { "label": "15m", "value": 15 },
+          { "label": "20m", "value": 20 },
+          { "label": "30m", "value": 30 },
+          { "label": "60m", "value": 60, "selected": true }
+        ]
+      }
+    },
+    "timelineInterval": {
+      "type": "number",
+      "group": "schemas.TIMELINE_SETTINGS",
+      "field": {
+        "component": "form/KSelectField",
+        "label": "schemas.TIMELINE_INTERVAL",
+        "options": [
+          { "label": "10s", "value": 10  },
+          { "label": "30s", "value": 30  },
+          { "label": "1m", "value": 60, "selected": true },
+          { "label": "5m", "value": 300 },
+          { "label": "10m", "value": 600 },
+          { "label": "15m", "value": 900 },
+          { "label": "30m", "value": 1800 }
+        ]
+      }
+    },
+    "timeseriesSpan": {
+      "type": "number",
+      "group": "schemas.TIMESERIES_SETTINGS",
+      "field": {
+        "component": "form/KSelectField",
+        "label": "schemas.TIMESERIES_SPAN",
+        "options": [
+          { "label": "3H", "value": 180 },
+          { "label": "6H", "value": 360 },
+          { "label": "12H", "value": 720 },
+          { "label": "24H", "value": 1440, "selected": true },
+          { "label": "48H", "value": 2880 },
+          { "label": "72H", "value": 4320 },
+          { "label": "96H", "value": 5760 }
+        ]
+      }
+    },
+    "restoreView": {
+      "type": "boolean",
+      "group": "schemas.MAP_SETTINGS",
+      "field": {
+        "component": "form/KToggleField",
+        "label": "schemas.RESTORE_VIEW_FIELD_LABEL"
+      }
+    },
+    "restoreLayers": {
+      "type": "boolean",
+      "group": "schemas.MAP_SETTINGS",
+      "field": {
+        "component": "form/KToggleField",
+        "label": "schemas.RESTORE_LAYERS_FIELD_LABEL"
+      }
+    },
+    "location": {
+      "type": "string",
+      "group": "schemas.MAP_SETTINGS",
+      "field": {
+        "component": "form/KTextField",
+        "label": "schemas.LOCATION_FORMAT_LABEL",
+        "helper": "schemas.LOCATION_FORMAT_HELPER"
+      }
+    },
+    "defaultLength": {
+      "type": "string",
+      "group": "schemas.UNITS_SETTINGS",
+      "field": {
+        "component": "form/KUnitField",
+        "label": "schemas.LENGTH_FIELD_LABEL",
+        "quantity": "length"
+      }
+    },
+    "defaultAltitude": {
+      "type": "string",
+      "group": "schemas.UNITS_SETTINGS",
+      "field": {
+        "component": "form/KUnitField",
+        "label": "schemas.ALTITUDE_FIELD_LABEL",
+        "quantity": "altitude"
+      }
+    },
+    "defaultArea": {
+      "type": "string",
+      "group": "schemas.UNITS_SETTINGS",
+      "field": {
+        "component": "form/KUnitField",
+        "label": "schemas.AREA_FIELD_LABEL",
+        "quantity": "area"
+      }
+    },
+    "defaultVelocity": {
+      "type": "string",
+      "group": "schemas.UNITS_SETTINGS",
+      "field": {
+        "component": "form/KUnitField",
+        "label": "schemas.VELOCITY_FIELD_LABEL",
+        "quantity": "velocity"
+      }
+    },
+    "defaultTemperature": {
+      "type": "string",
+      "group": "schemas.UNITS_SETTINGS",
+      "field": {
+        "component": "form/KUnitField",
+        "label": "schemas.TEMPERATURE_FIELD_LABEL",
+        "quantity": "temperature"
+      }
+    },
+    "defaultAngle": {
+      "type": "string",
+      "group": "schemas.UNITS_SETTINGS",
+      "field": {
+        "component": "form/KUnitField",
+        "label": "schemas.ANGLE_FIELD_LABEL",
+        "quantity": "angle"
+      }
+    },
+    "defaultNotation": {
+      "type": "string",
+      "group": "schemas.NOTATION_SETTINGS",
+      "field": {
+        "component": "form/KSelectField",
+        "label": "schemas.NOTATION_FIELD_LABEL",
+        "options": [
+          { "label": "schemas.AUTO_NOTATION_FIELD_LABEL", "value": "auto", "selected": true },
+          { "label": "schemas.FIXED_NOTATION_FIELD_LABEL", "value": "fixed" },
+          { "label": "schemas.EXPONENTIAL_NOTATION_FIELD_LABEL", "value": "exponential" }
+        ]
+      }
+    },
+    "defaultPrecision": {
+      "type": "number",
+      "group": "schemas.NOTATION_SETTINGS",
+      "minimum": 0,
+      "maximum": 6,
+      "field": {
+        "component": "form/KNumberField",
+        "label": "schemas.PRECISION_FIELD_LABEL"
+      }
+    }
+  },
+  "required": [
+    "shortTime",
+    "longTime",
+    "shortDate",
+    "longDate",
+    "shortYear",
+    "longYear",
+    "timezone",
+    "location"
+  ]
+}

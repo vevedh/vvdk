@@ -1,0 +1,162 @@
+{
+  "name": "@vevedh/vvdk",
+  "description": "Vevedh Development Kit",
+  "version": "0.0.1",
+  "homepage": "https://github.com/vevedh/vvdk",
+  "type": "module",
+  "keywords": [
+    "vevedh",
+    "VVDK"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vevedh/vvdk.git"
+  },
+  "author": {
+    "name": "Herve de CHAVIGNY (inspired from KDK)",
+    "url": "https://github.com/vevedh/vvdk"
+  },
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/vevedh/vvdk/issues"
+  },
+  "engines": {
+    "node": ">= 16.0.0"
+  },
+  "scripts": {
+    "publish": "git push origin --tags && git push origin",
+    "release:patch": "npm version --force patch && npm publish --access public",
+    "release:minor": "npm version --force minor && npm publish --access public",
+    "release:major": "npm version --force major && npm publish --access public",
+    "lint:core": "standard core/**/*.js core/**/*.vue --fix",
+    "lint:map": "standard map/**/*.js map/**/*.vue --fix",
+    "lint:test:api": "standard test/api/core/**/*.js test/api/map/**/*.js --fix",
+    "lint:test:client": "standard test/client/core/**/*.js test/client/map/**/*.js --fix",
+    "lint": "npm-run-all --serial lint:**",
+    "mocha:core": "cross-env NODE_CONFIG_DIR=./test/api/core/config/ mocha test/api/core/**/*.test.js --exit",
+    "mocha:map": "cross-env NODE_CONFIG_DIR=./test/api/map/config/ mocha test/api/map/**/*.test.js --exit",
+    "mocha": "npm-run-all --serial mocha:**",
+    "coverage": "c8 npm run mocha",
+    "test": "npm run lint && npm run coverage"
+  },
+  "standard": {
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "plugins": [
+      "vue"
+    ],
+    "env": [
+      "mocha"
+    ],
+    "globals": [
+      "DEV",
+      "PROD",
+      "fetch",
+      "cordova",
+      "location",
+      "FileReader",
+      "LocalFileSystem",
+      "mime",
+      "atob",
+      "URL",
+      "Blob",
+      "Event",
+      "MouseEvent",
+      "AbortController",
+      "localStorage",
+      "DOMParser"
+    ]
+  },
+  "directories": {
+    "core": "./core",
+    "map": "./map",
+    "test": "./test",
+    "extras": "./extras",
+    "docs": "./docs"
+  },
+  "dependencies": {
+    "@casl/ability": "^6.1.1",
+    "@casl/mongoose": "^7.1.0",
+    "@feathersjs/authentication": "^5.0.8",
+    "@feathersjs/authentication-local": "^5.0.8",
+    "@feathersjs/authentication-oauth": "^5.0.8",
+    "@feathersjs/configuration": "^5.0.8",
+    "@feathersjs/errors": "^5.0.8",
+    "@feathersjs/express": "^5.0.8",
+    "@feathersjs/feathers": "^5.0.8",
+    "@feathersjs/schema": "^5.0.8",
+    "@feathersjs/socketio": "^5.0.8",
+    "@kalisio/feathers-import-export": "https://github.com/vevedh/feathers-import-export",
+    "@kalisio/feathers-s3": "^1.2.0",
+    "@kalisio/feathers-webpush": "^1.0.1",
+    "@turf/bbox": "^6.0.1",
+    "@weacast/core": "^2.1.5",
+    "abort-controller": "^3.0.0",
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "ajv-keywords": "^5.1.0",
+    "compression": "^1.6.2",
+    "cors": "^2.8.1",
+    "cron": "^1.4.1",
+    "debug": "^4.1.0",
+    "ejs": "^2.5.7",
+    "email-templates": "^2.7.1",
+    "email-validator": "^2.0.4",
+    "express-rate-limit": "^5.1.0",
+    "feathers-authentication-management": "^4.0.0",
+    "feathers-hooks-common": "^5.0.6",
+    "feathers-mailer": "^3.0.0",
+    "feathers-mongodb": "^6.0.0",
+    "feathers-mongodb-fuzzy-search": "^2.0.1",
+    "feathers-mongodb-management": "^2.0.1",
+    "geotiff": "^2.0.4",
+    "helmet": "^3.5.0",
+    "jsdap": "^8.1.0",
+    "limiter": "^1.1.3",
+    "lodash": "^4.17.15",
+    "lru-cache": "^5.1.1",
+    "moment": "^2.24.0",
+    "mongodb": "^3.6.2",
+    "node-fetch": "^2.6.0",
+    "papaparse": "^5.4.1",
+    "password-generator": "^2.3.2",
+    "password-validator": "^4.0.0",
+    "sanitize-html": "^2.3.2",
+    "sift": "^8.0.0",
+    "superagent": "^5.1.0",
+    "tiny-emitter": "^2.1.0",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^3.10.0",
+    "xml2js": "^0.4.22"
+  },
+  "devDependencies": {
+    "@feathersjs/authentication-client": "^5.0.8",
+    "@feathersjs/memory": "^5.0.8",
+    "@kalisio/feathers-distributed": "^2.2.1",
+    "@turf/intersect": "^6.1.3",
+    "@weacast/gfs": "^2.1.5",
+    "@weacast/probe": "^2.1.5",
+    "body-parser": "^1.17.1",
+    "c8": "^7.11.0",
+    "chai": "^4.2.0",
+    "chai-lint": "^0.1.1",
+    "chai-spies": "^0.7.1",
+    "containerized": "^1.0.2",
+    "cross-env": "^5.2.0",
+    "eslint-plugin-vue": "^9.1.0",
+    "esm": "^3.2.25",
+    "fs-extra": "^8.1.0",
+    "googleapis": "^21.3.0",
+    "mocha": "^9.1.1",
+    "nock": "^9.2.6",
+    "npm-run-all": "^4.1.1",
+    "pixelmatch": "^5.2.0",
+    "pngjs": "^5.0.0",
+    "puppeteer": "^20.5.0",
+    "shx": "^0.3.2",
+    "standard": "^16.0.4"
+  }
+}
