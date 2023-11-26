@@ -61,7 +61,7 @@ const formRef = ref(null)
 const processing = ref(false)
 const schema = ref({
   $schema: 'http://json-schema.org/draft-07/schema#',
-  $id: 'http://kalisio.xyz/schemas/verify-email-manager#',
+  $id: 'http://vevedh.io/schemas/verify-email-manager#',
   title: 'Verify email form',
   type: 'object',
   properties: {

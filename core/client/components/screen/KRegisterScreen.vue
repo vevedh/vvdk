@@ -40,7 +40,7 @@ const domain = _.get(config, 'domain')
 function getFormSchema () {
   return {
     $schema: 'http://json-schema.org/draft-07/schema#',
-    $id: 'http://kalisio.xyz/schemas/register.json#',
+    $id: 'http://vevedh.io/schemas/register.json#',
     title: 'Registration Form',
     type: 'object',
     properties: {

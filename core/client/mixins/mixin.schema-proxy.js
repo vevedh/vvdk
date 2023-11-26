@@ -81,7 +81,7 @@ export const schemaProxy = {
     },
     loadSchema (schemaName) {
       // Create a new mixin promise if required
-      // In the JSON schema file we use a $id like 'http:/www.kalisio.xyz/schemas/service.operation-perspective.json#'
+      // In the JSON schema file we use a $id like 'http:/www.vevedh.io/schemas/service.operation-perspective.json#'
       const schemaChanged = schemaName && !this.getSchemaId().includes(schemaName + '.json')
       if (!this.schemaPromise || schemaChanged) {
         // We need to load the schema now

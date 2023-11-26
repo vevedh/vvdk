@@ -42,7 +42,7 @@ const processing = ref(false)
 const send = ref(false)
 const schema = ref({
   $schema: 'http://json-schema.org/draft-07/schema#',
-  $id: 'http://kalisio.xyz/schemas/reset-password.json#',
+  $id: 'http://vevedh.io/schemas/reset-password.json#',
   title: 'Reset Password form',
   description: 'Reset password form',
   type: 'object',

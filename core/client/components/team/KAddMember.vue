@@ -129,7 +129,7 @@ export default {
     getUserEmailSchema () {
       return {
         $schema: 'http://json-schema.org/draft-07/schema#',
-        $id: 'http://kalisio.xyz/schemas/user-email',
+        $id: 'http://vevedh.io/schemas/user-email',
         type: 'object',
         properties: {
           email: {
@@ -168,7 +168,7 @@ export default {
       if (this.user) {
         return {
           $schema: 'http://json-schema.org/draft-07/schema#',
-          $id: 'http://kalisio.xyz/schemas/user-properties',
+          $id: 'http://vevedh.io/schemas/user-properties',
           type: 'object',
           properties: {
             role: role
@@ -178,7 +178,7 @@ export default {
       }
       return {
         $schema: 'http://json-schema.org/draft-07/schema#',
-        $id: 'http://kalisio.xyz/schemas/user-properties',
+        $id: 'http://vevedh.io/schemas/user-properties',
         type: 'object',
         properties: {
           name: name,
@@ -190,7 +190,7 @@ export default {
     getUsersFileSchema () {
       return {
         $schema: 'http://json-schema.org/draft-07/schema#',
-        $id: 'http://kalisio.xyz/schemas/users-file',
+        $id: 'http://vevedh.io/schemas/users-file',
         type: 'object',
         properties: {
           file: {

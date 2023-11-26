@@ -41,7 +41,7 @@ const loading = ref(false)
 function getFormSchema () {
   return {
     $schema: 'http://json-schema.org/draft-07/schema#',
-    $id: 'http:/kalisio.xyz/schemas/login.json#',
+    $id: 'http:/vevedh.io/schemas/login.json#',
     title: 'Login form',
     type: 'object',
     properties: {

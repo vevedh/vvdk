@@ -375,9 +375,9 @@
     "API_VERSION": "API v{version}"
   },
   "KSponsor": {
-    "KDK_POWERED": "Réalisé à partir du Kalisio's Development Kit",
+    "KDK_POWERED": "Réalisé à partir de Vevedh Development Kit",
     "MORE_ABOUT_KDK": "En savoir plus sur le VVDK",
-    "MORE_ABOUT_KALISIO": "En savoir plus sur Kalisio"
+    "MORE_ABOUT_KALISIO": "En savoir plus sur Vevedh"
   },
   "KPlatform": {
     "PROPERTY": "Propriété",

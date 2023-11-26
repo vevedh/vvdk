@@ -50,7 +50,7 @@ export default {
       if (this.member === null) return {}
       const schema = {
         $schema: 'http://json-schema.org/draft-07/schema#',
-        $id: 'http://kalisio.xyz/schemas/add-tag#',
+        $id: 'http://vevedh.io/schemas/add-tag#',
         title: 'Add Tag Form',
         type: 'object',
         properties: {

@@ -51,7 +51,7 @@ export default {
       if (this.member === null) return {}
       const schema = {
         $schema: 'http://json-schema.org/draft-07/schema#',
-        $id: 'http://kalisio.xyz/schemas/join-group#',
+        $id: 'http://vevedh.io/schemas/join-group#',
         title: 'Join Group Form',
         type: 'object',
         properties: {

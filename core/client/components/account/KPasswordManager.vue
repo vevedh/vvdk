@@ -33,7 +33,7 @@ const formRef = ref(null)
 const User = Store.get('user')
 const schema = ref({
   $schema: 'http://json-schema.org/draft-07/schema#',
-  $id: 'http://kalisio.xyz/schemas/password-manager.json#',
+  $id: 'http://vevedh.io/schemas/password-manager.json#',
   title: 'Change Password form',
   type: 'object',
   properties: {

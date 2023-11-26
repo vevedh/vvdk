@@ -55,7 +55,7 @@ export default {
       if (this.getScope() === 'organisations') roles.push('owner')
       return {
         $schema: 'http://json-schema.org/draft-07/schema#',
-        $id: 'http://kalisio.xyz/schemas/change-role#',
+        $id: 'http://vevedh.io/schemas/change-role#',
         type: 'object',
         properties: {
           role: {

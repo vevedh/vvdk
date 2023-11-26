@@ -123,7 +123,7 @@ export default {
     uploadSchema () {
       return {
         $schema: 'http://json-schema.org/draft-07/schema#',
-        $id: 'http://kalisio.xyz/schemas/upload-media',
+        $id: 'http://vevedh.io/schemas/upload-media',
         type: 'object',
         properties: {
           media: {

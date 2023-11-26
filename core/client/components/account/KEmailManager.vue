@@ -55,7 +55,7 @@ const dialog = ref(false)
 const processing = ref(false)
 const modifyEmailSchema = ref({
   $schema: 'http://json-schema.org/draft-07/schema#',
-  $id: 'http://kalisio.xyz/schemas/modify-email-manager#',
+  $id: 'http://vevedh.io/schemas/modify-email-manager#',
   title: 'Modify email form',
   type: 'object',
   properties: {
@@ -80,7 +80,7 @@ const modifyEmailSchema = ref({
 })
 const validateEmailSchema = ref({
   $schema: 'http://json-schema.org/draft-07/schema#',
-  $id: 'http://kalisio.xyz/schemas/verify-email-manager#',
+  $id: 'http://vevedh.io/schemas/verify-email-manager#',
   title: 'Verify email form',
   type: 'object',
   properties: {
