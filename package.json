@@ -11,7 +11,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vevedh"
+    "url": "git://github.com/vevedh/vvdk.git"
   },
   "author": {
     "name": "Herve de CHAVIGNY (inspired from KDK)",
